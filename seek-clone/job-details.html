@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details - CareerConnect</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+                <h1 class="text-2xl font-bold text-blue-600">CareerConnect</h1>
+            </a>
+            <a href="index.html" class="text-blue-600 hover:text-blue-800">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Jobs
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="flex items-start justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold" id="jobTitle">Senior Software Engineer</h1>
+                    <p class="text-blue-600 text-xl font-medium mt-2" id="companyName">Tech Innovations Inc.</p>
+                </div>
+                <a href="apply.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                    Apply Now
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Job Details</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-gray-500 w-6"></i>
+                            <span class="ml-2" id="jobLocation">Remote / San Francisco</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-dollar-sign text-gray-500 w-6"></i>
+                            <span class="ml-2" id="jobSalary">$120,000 - $150,000</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-briefcase text-gray-500 w-6"></i>
+                            <span class="ml-2" id="jobType">Full-time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">About the Role</h2>
+                    <p class="text-gray-700" id="jobDescription">
+                        We are looking for an experienced Software Engineer to join our growing team...
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h2 class="text-xl font-semibold mb-4">Requirements</h2>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700" id="jobRequirements">
+                    <li>5+ years of software development experience</li>
+                    <li>Strong JavaScript/TypeScript skills</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="job-data.js"></script>
+</body>
+</html>
