@@ -1,0 +1,89 @@
+/* Modern Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary: #f59e0b;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.8;
+  color: #374151;
+  font-size: 1.05rem;
+}
+
+.job-description {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.job-title {
+  color: #111827;
+  font-weight: 600;
+}
+
+.company-name {
+  color: #1e40af;
+}
+
+/* Enhanced Components */
+.btn {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+}
+
+.btn-secondary {
+  @apply bg-yellow-500 text-white hover:bg-yellow-600;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Responsive Improvements */
+@media (min-width: 1024px) {
+  .job-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+/* Background Textures */
+.hero-bg {
+    background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.content-bg {
+    background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card-bg {
+    background-color: rgba(255,255,255,0.9);
+    backdrop-filter: blur(2px);
+}
