@@ -1,0 +1,16 @@
+/* Custom styles for Seek Clone */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+button {
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
