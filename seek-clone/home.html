@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect - Find Your Dream Job</title>
+    <!-- Production-ready Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+                <h1 class="text-2xl font-bold text-blue-600">CareerConnect</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-blue-600 font-medium">Browse Jobs</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">Career Advice</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">For Employers</a>
+            </div>
+            <div>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                    Sign In
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section with gradient background -->
+        <section class="hero-bg text-white py-32 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-blue-800/90"></div>
+            <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
+                <h1 class="text-5xl font-bold mb-6">Find Your Dream Job Today</h1>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of companies and top talent connecting through our innovative platform</p>
+                <a href="job-listings.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition inline-block text-lg shadow-lg">
+                    Browse Jobs <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Enhanced Features Section -->
+        <section class="max-w-7xl mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose CareerConnect?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We make job searching and hiring simple and effective</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="text-blue-500 text-5xl mb-6">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quick Hiring</h3>
+                    <p class="text-gray-600">Average time to hire is 50% faster than industry standard</p>
+                    <div class="mt-4 text-blue-500">
+                        <i class="fas fa-check-circle"></i> 24-hour response time
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="text-blue-500 text-5xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Career Growth</h3>
+                    <p class="text-gray-600">85% of candidates report career advancement within 1 year</p>
+                    <div class="mt-4 text-blue-500">
+                        <i class="fas fa-check-circle"></i> Personalized career paths
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="text-blue-500 text-5xl mb-6">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Advice</h3>
+                    <p class="text-gray-600">Access to industry mentors and career coaches</p>
+                    <div class="mt-4 text-blue-500">
+                        <i class="fas fa-check-circle"></i> Free resume reviews
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">What Our Users Say</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full mr-4" alt="User">
+                            <div>
+                                <h4 class="font-bold">Sarah Johnson</h4>
+                                <p class="text-blue-600">UX Designer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"Found my dream job in just two weeks! The application process was so smooth."</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-full mr-4" alt="User">
+                            <div>
+                                <h4 class="font-bold">Michael Chen</h4>
+                                <p class="text-blue-600">Product Manager</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"As an employer, we found three perfect candidates within days of posting."</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-12 h-12 rounded-full mr-4" alt="User">
+                            <div>
+                                <h4 class="font-bold">Jessica Williams</h4>
+                                <p class="text-blue-600">Data Scientist</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"The salary insights helped me negotiate a 20% higher offer than expected!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="bg-blue-50 py-16">
+            <div class="max-w-2xl mx-auto px-4 text-center">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Get Job Alerts</h2>
+                    <p class="text-gray-600 mb-6">Sign up for our newsletter and get the latest jobs delivered to your inbox</p>
+                    <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                        <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition font-medium">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">CareerConnect</h3>
+                    <p class="text-gray-300">Connecting talent with opportunity since 2023.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">For Job Seekers</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Browse Jobs</a></li>
+                        <li><a href="career-advice.html" class="text-gray-300 hover:text-white">Career Advice</a></li>
+                        <li><a href="salary-tool.html" class="text-gray-300 hover:text-white">Salary Tool</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">For Employers</h4>
+                    <ul class="space-y-2">
+                        <li><a href="post-job.html" class="text-gray-300 hover:text-white">Post a Job</a></li>
+                        <li><a href="browse-candidates.html" class="text-gray-300 hover:text-white">Browse Candidates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>© 2023 CareerConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
